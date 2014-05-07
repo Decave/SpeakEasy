@@ -1,14 +1,8 @@
-===========================================
-        David C. Vernet -- dcv2105
-        CSEE4119 -- Spring 2014
-        Programming Assignment 1
-===========================================
-
-**** -- READ THIS -- ****
+# READ THIS
 
 Please note that this code is application is still in development, and will not work in its current build. I made this application as part of a project for a class, and I will have to perform extensive updates to make it even remotely useable in a production environment. For example, per the odd instructions of the assignment, I configured the application's users, and their passwords, to be read from a plaintext file as opposed to having any kind of registration capability. So yup, you couldn't even use the application if you wanted to at this point. In addition, I have not had a chance to even hide the password when written to stdin, much less encrypt any communication between the client or server, and I have a LOT of tests to write. In short, I DO NOT recommend you use this code.
 
-*** Code Description ***
+## Code Description
 
 The code is contained in a set of Server classes, and a set of Client classes, which handle the server side, 
 and client side services of the chat program respectively. The server side classes include Server.java and 
@@ -43,7 +37,7 @@ implemented as a thread to account for the fact that a client may receive input 
 time, and not only after sending a command to the server.
 
 
-*** Development Environment ***
+## Development Environment
 
 I chose to develop my code in Java. As was explained in class, Java has a rich and powerful Socket 
 programming library, and is ideal for a chat program (especially as a first-time network programmer!). 
@@ -53,19 +47,19 @@ on an Ubuntu 12.04 LTS operating system (though with the JVM, this is of course 
 information).
 
 
-*** How to run the code ***
+## How to run the code
 
 From here on, assume a `$' character represents the start of a terminal command. The code must be 
 run with the following steps:
 
-1) Compile the program using make
+(1) Compile the program using make
     From inside the directory of the application, run the command `make' as such:
 
     $make
 
     When running make, Makefile will generate the .class files you need to run the application. 
 
-2) Run the server side of the chat program
+(2) Run the server side of the chat program
     To run the server side of the chat program, you must first run the server side of the chat 
     program so that the client will have a Socket to connect to when he/she starts the program. 
     To run the server side of the chat program, run the following command:
@@ -77,7 +71,7 @@ run with the following steps:
     client/server architecture, Server should be `always on' so that it can service a client 
     at any time.
 
-    ** Command line options **
+### Command line options
     When starting the Server program, there are several command line options available to customize 
     the program:
         * --LAST_HOUR  - Specifies the length of time, in milliseconds, that wholasthr should consider 
@@ -102,7 +96,7 @@ run with the following steps:
     $java Server 4119 -v --TIME_OUT=1000 --BLOCK_TIME=159355 --LAST_HOUR=63000
                        
 
-3) Run the client side of the chat program
+(3) Run the client side of the chat program
     After, and ONLY after, the Server program has been started, can the Client program 
     be started. To connect to the server, the client must both specify the IP Address of the server,
     and the port number of the Server process, when starting the program. This command is run as such:
@@ -130,17 +124,17 @@ please refer to the project spec. For a guide to the supplementary features of t
 see below.
 
 
-*** Supplementary features ***
+## Supplementary features
 As mentioned above, for a guide to using the normal commands of the chat-program, see the 
 project spec. In this section, we will describe the functionality of all the supplementary 
 features of the chat-program that are included in this release.
 
-* Server program supplementary features *
+### Server program supplementary features
 On the server side, the only supplementary features are the command line arguments mentioned
 in the section above in the `How to run the code' section. Please refer to that documentation 
 for information about how to use the Server program supplementary features.
 
-* Client program supplementary features *
+### Client program supplementary features
 On the client side, there are several supplementary features to those included in the normal 
 project spec. Firstly, there is an option to run the Client in 'verbosity' mode. For information 
 on how to run the client in `verbosity' mode, see the documentation in the `How to run the code'
@@ -187,8 +181,7 @@ Server, and both are described below:
     wholasthr: 1/10 --- 10.00%
 
 
-*** Last notes ***
-Thank you for using my chat program. Please feel free to use it and distribute it to your liking. 
-For bug reports or feature requests, please email me at Dcvernet@gmail.com.
+## Last notes
+Thank you for using my chat program. Please feel free to use it and distribute it to your liking.
 
 Happy chatting!
