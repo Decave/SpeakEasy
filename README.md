@@ -1,6 +1,8 @@
 # READ THIS
 
-Please note that this code is application is still in development, and will not work in its current build. I made this application as part of a project for a class, and I will have to perform extensive updates to make it even remotely useable in a production environment. For example, per the odd instructions of the assignment, I configured the application's users, and their passwords, to be read from a plaintext file as opposed to having any kind of registration capability. So yup, you couldn't even use the application if you wanted to at this point. In addition, I have not had a chance to even hide the password when written to stdin, much less encrypt any communication between the client or server, and I have a LOT of tests to write. In short, I DO NOT recommend you use this code.
+Please note that this application is still in development, and will not work in its current build. To be more precise, it will compile...but it should *NOT BE USED*. I made this application as part of a project for a class, and I will have to perform extensive updates to make it even remotely useable in a production environment. For example, per the odd instructions of the assignment, I configured the application's users, and their passwords, to be read from a plaintext file as opposed to having any kind of registration capability. So yup, you couldn't even use the application if you wanted to at this point. In addition, I have not had a chance to even hide the password when written to stdin, much less encrypt any communication between the client or server, and I have a LOT of tests to write. 
+
+tldr: *DO NOT* use this code. You have been warned.
 
 ## Code Description
 
